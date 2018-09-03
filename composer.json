@@ -1,21 +1,18 @@
 {
   "name": "mudocker/httpclient",
-  "keywords": [
-  ],
+  "keywords": [],
   "homepage": "https://github.com/mudocker/httpclient",
   "license": "MIT",
   "support": {
     "source": "https://github.com/mudocker/httpclient"
   },
   "authors": [
-    {
-      "name": "mudocker",
-      "email": "mudocker@163.com"
-    }
+    {"name": "mudocker", "email": "mudocker@163.com"}
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.4.0"
+    "php": ">=5.3.29",
+    "react/http-client": "^0.5.9"
   },
   "autoload": {
     "psr-4": {
