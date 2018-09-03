@@ -12,4 +12,10 @@ namespace mdocker\lib;
 class Httpclient
 {
 
+  function __construct(){
+
+
+
+
+    }
 }

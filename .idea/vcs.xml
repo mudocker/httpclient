@@ -4,9 +4,13 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/evenement/evenement" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/psr/http-message" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/react/cache" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/react/dns" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/react/event-loop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/react/http-client" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/react/promise" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/react/promise-timer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/react/socket" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/react/stream" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/ringcentral/psr7" vcs="Git" />
   </component>
