@@ -9,7 +9,7 @@
   "authors": [
     {"name": "mudocker", "email": "mudocker@163.com"}
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
     "php": ">=5.3.29",
     "react/http-client": "^0.5.9"
