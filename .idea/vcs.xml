@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/evenement/evenement" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/php-curl-class/php-curl-class" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/psr/http-message" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/react/cache" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/react/dns" vcs="Git" />

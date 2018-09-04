@@ -2,7 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b44a008b-a520-479e-b4bf-0b30593b0e3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/ArrayUtil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/CaseInsensitiveArray.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/Curl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/Decoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/Encoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/HttpClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/StringUtil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/Url.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/coinbase_account_balance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/coinbase_btc_spot_price.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/coinbase_eth_spot_price.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/custom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/deviant_art_rss.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/download_file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/download_file_with_callback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/download_file_with_redirect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/flickr.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/flickr_photo_search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/flickr_upload_photo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/get.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/get_base_url_1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/get_base_url_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/get_pages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/get_relative.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/get_response_cookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/get_with_callable_retry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/get_with_retry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/github_create_gist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/gmail_send_email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/google_maps_geocode_address.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/google_plus_profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/google_spreadsheet_values_update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/gratipay_send_tip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/instagram_popular_media.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/instagram_search_photos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/mailchimp_subscribe_email_address.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/memory_leak_test_curl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/memory_leak_test_multi_curl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_before_send.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_download.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_download_with_callback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_download_with_callbacks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_get.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_get_callbacks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_get_load_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_get_with_callable_retry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_get_with_retry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_patch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_put.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/multi_curl_upload_file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/patch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/post_json.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/post_json_array_response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/post_json_manual_encoding.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/post_multiple_values_same_key_with_indexes_explicit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/post_multiple_values_same_key_with_indexes_implicit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/post_multiple_values_same_key_without_indexes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/post_redirect_get.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/progress.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/progress_advanced.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/proxy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/put.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/put_large_file_chunked.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/receive_large_file_chunked.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/reddit_top_pics.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/set_cookie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/set_url_1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/set_url_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/twitter_post_tweet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/twitter_trending_topics.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/upload_file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/use_custom_xml_decoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/youtube_list_playlist_videos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/curl/examples/youtube_video_count.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/exp/ErrorException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/func/exp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/un.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpclient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpclient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Httpclient.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Httpclient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/evenement/evenement" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/react/cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/react/dns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/react/event-loop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/react/http-client" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/react/promise" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/react/promise-timer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/react/socket" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/react/stream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ringcentral/psr7" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,43 +136,51 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cmd" value="7" />
-          <entry key="json" value="4" />
-          <entry key="md" value="2" />
-          <entry key="php" value="7" />
+          <entry key="Dockerfile" value="1" />
+          <entry key="cmd" value="9" />
+          <entry key="json" value="7" />
+          <entry key="md" value="3" />
+          <entry key="php" value="62" />
+          <entry key="py" value="1" />
+          <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Cmd" value="7" />
-          <entry key="JSON" value="4" />
-          <entry key="Markdown" value="2" />
-          <entry key="PHP" value="7" />
+          <entry key="Bash" value="1" />
+          <entry key="Cmd" value="9" />
+          <entry key="Dockerfile" value="1" />
+          <entry key="JSON" value="7" />
+          <entry key="Markdown" value="3" />
+          <entry key="PHP" value="62" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cmd" value="15" />
+          <entry key="cmd" value="60" />
+          <entry key="dummy" value="10" />
           <entry key="json" value="52" />
-          <entry key="php" value="149" />
+          <entry key="php" value="1143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Cmd" value="15" />
+          <entry key="Cmd" value="60" />
           <entry key="JSON" value="52" />
-          <entry key="PHP" value="149" />
+          <entry key="PHP" value="1143" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions">
         <counts>
           <entry key="install_from_ComposerEditorNotificationPanel" value="2" />
-          <entry key="updateAll_from_ComposerEditorNotificationPanel" value="1" />
+          <entry key="updateAll_from_ComposerEditorNotificationPanel" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="2" />
+          <entry key="PHP Class.type" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -72,37 +188,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+        <entry file="file://$PROJECT_DIR$/lib/curl/HttpClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="361">
+              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/Httpclient.php">
+        <entry file="file://$PROJECT_DIR$/lib/curl/Curl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="342">
+              <caret line="476" column="34" selection-start-line="476" selection-start-column="22" selection-end-line="476" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tags.cmd">
+        <entry file="file://$PROJECT_DIR$/lib/curl/ArrayUtil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gp.cmd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" selection-start-column="28" selection-end-column="94" />
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -112,7 +219,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>HttpClient</find>
+      <find>$error_message =</find>
+      <find>StringUtil</find>
+      <find>\Curl</find>
+      <find>$value_chars[]</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\all\php\httpclient\lib\curl</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -124,10 +238,26 @@
       <list>
         <option value="$PROJECT_DIR$/lib/TTT.php" />
         <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/gp.cmd" />
         <option value="$PROJECT_DIR$/tags.cmd" />
         <option value="$PROJECT_DIR$/lib/Httpclient.php" />
+        <option value="$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/Curl.php" />
+        <option value="$PROJECT_DIR$/lib/curl/ArrayUtil.php" />
+        <option value="$PROJECT_DIR$/lib/curl/CaseInsensitiveArray.php" />
+        <option value="$PROJECT_DIR$/lib/curl/Decoder.php" />
+        <option value="$PROJECT_DIR$/lib/curl/StringUtil.php" />
+        <option value="$PROJECT_DIR$/lib/curl/examples/multi_curl_get.php" />
+        <option value="$PROJECT_DIR$/lib/exp/ErrorException.php" />
+        <option value="$PROJECT_DIR$/lib/curl/MultiCurl.php" />
+        <option value="$PROJECT_DIR$/un.cmd" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/lib/curl/examples/coinbase_eth_spot_price.php" />
+        <option value="$PROJECT_DIR$/lib/curl/examples/twitter_trending_topics.php" />
+        <option value="$PROJECT_DIR$/lib/func/exp.php" />
+        <option value="$PROJECT_DIR$/lib/curl/HttpClient.php" />
+        <option value="$PROJECT_DIR$/lib/curl/Url.php" />
+        <option value="$PROJECT_DIR$/lib/curl/Encoder.php" />
+        <option value="$PROJECT_DIR$/lib/curl/Curl.php" />
       </list>
     </option>
   </component>
@@ -140,17 +270,6 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/ringcentral/psr7" />
-      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
-      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
-      <path value="$PROJECT_DIR$/vendor/react/stream" />
-      <path value="$PROJECT_DIR$/vendor/react/promise" />
-      <path value="$PROJECT_DIR$/vendor/react/promise-timer" />
-      <path value="$PROJECT_DIR$/vendor/react/cache" />
-      <path value="$PROJECT_DIR$/vendor/react/dns" />
-      <path value="$PROJECT_DIR$/vendor/react/socket" />
-      <path value="$PROJECT_DIR$/vendor/react/http-client" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -158,6 +277,77 @@
     <option name="y" value="59" />
     <option name="width" value="1400" />
     <option name="height" value="996" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Code SmellPHP</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingPHP</id>
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+          <State>
+            <id>Flow type checkerJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralPHP</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Error handlingPHP</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -177,6 +367,23 @@
               <item name="httpclient" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="curl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="func" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -189,10 +396,12 @@
     <property name="last_opened_file_path" value="D:/soft/bc/phpstudy/2018/PHPTutorial/php/php-7.2.1-nts/php.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\all\php\httpclient\lib\curl" />
+      <recent name="D:\all\php\httpclient\lib" />
       <recent name="D:\all\php\httpclient" />
     </key>
   </component>
@@ -208,6 +417,9 @@
       </list>
     </option>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",Show Fields,VISIBILITY_SORTER,ALPHA_COMPARATOR,Show Private Members,Show Protected Members,Show Constants" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -222,22 +434,23 @@
       <workItem from="1535978324664" duration="1108000" />
       <workItem from="1536023617341" duration="5811000" />
       <workItem from="1536030747558" duration="2484000" />
-      <workItem from="1536033404927" duration="901000" />
+      <workItem from="1536033404927" duration="7355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13286000" />
+    <option name="totallyTimeSpent" value="19740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2603834" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2603834" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Structure" order="2" weight="0.24973376" />
+      <window_info active="true" id="Structure" order="2" visible="true" weight="0.24973376" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -245,7 +458,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -304,31 +517,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gp.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tags.cmd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Httpclient.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/ArrayUtil.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/Curl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/scripts/bump_minor_version.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/StringUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/examples/coinbase_btc_spot_price.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/examples/get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/Decoder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/CaseInsensitiveArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/examples/delete.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/MultiCurl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="650" column="20" selection-start-line="650" selection-start-column="20" selection-end-line="650" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/docs/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/www/build.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/www/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/tests/generate_urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/scripts/bump_major_version.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/examples/multi_curl_get.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="17" />
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="543" column="33" lean-forward="true" selection-start-line="543" selection-start-column="33" selection-end-line="543" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gp.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/un.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/HttpClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/examples/coinbase_eth_spot_price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/examples/twitter_trending_topics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="26" column="133" selection-start-line="26" selection-start-column="133" selection-end-line="26" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/exp/ErrorException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl_d.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/Url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-893">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/StringUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/Encoder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/func/exp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/HttpClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/ArrayUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl/Curl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="476" column="34" selection-start-line="476" selection-start-column="22" selection-end-line="476" selection-end-column="34" />
         </state>
       </provider>
     </entry>

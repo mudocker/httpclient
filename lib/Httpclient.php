@@ -74,4 +74,9 @@ class Httpclient {
         return $this->buffer = file_get_contents($url, false, $context);
     }
 
+
+
+
+
+
 }

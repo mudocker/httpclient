@@ -6,31 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitda55e3c14e6c3d9f00bf7dad1c942911
 {
-    public static $files = array (
-        '7844cce90d4037f1a077c08319eef109' => __DIR__ . '/..' . '/react/promise/src/React/Promise/functions_include.php',
-        '6b06ce8ccf69c43a60a1e48495a034c9' => __DIR__ . '/..' . '/react/promise-timer/src/functions.php',
-        'ebf8799635f67b5d7248946fe2154f4a' => __DIR__ . '/..' . '/ringcentral/psr7/src/functions_include.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
         'm' => 
         array (
             'mdocker\\' => 8,
-        ),
-        'R' => 
-        array (
-            'RingCentral\\Psr7\\' => 17,
-            'React\\Stream\\' => 13,
-            'React\\Socket\\' => 13,
-            'React\\Promise\\Timer\\' => 20,
-            'React\\HttpClient\\' => 17,
-            'React\\EventLoop\\' => 16,
-            'React\\Dns\\' => 10,
-            'React\\Cache\\' => 12,
-        ),
-        'P' => 
-        array (
-            'Psr\\Http\\Message\\' => 17,
         ),
     );
 
@@ -39,59 +18,6 @@ class ComposerStaticInitda55e3c14e6c3d9f00bf7dad1c942911
         array (
             0 => __DIR__ . '/../..' . '/',
         ),
-        'RingCentral\\Psr7\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/ringcentral/psr7/src',
-        ),
-        'React\\Stream\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/react/stream/src',
-        ),
-        'React\\Socket\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/react/socket/src',
-        ),
-        'React\\Promise\\Timer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/react/promise-timer/src',
-        ),
-        'React\\HttpClient\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/react/http-client/src',
-        ),
-        'React\\EventLoop\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/react/event-loop/src',
-        ),
-        'React\\Dns\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/react/dns/src',
-        ),
-        'React\\Cache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/react/cache/src',
-        ),
-        'Psr\\Http\\Message\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'R' => 
-        array (
-            'React\\Promise' => 
-            array (
-                0 => __DIR__ . '/..' . '/react/promise/src',
-            ),
-        ),
-        'E' => 
-        array (
-            'Evenement' => 
-            array (
-                0 => __DIR__ . '/..' . '/evenement/evenement/src',
-            ),
-        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -99,7 +25,6 @@ class ComposerStaticInitda55e3c14e6c3d9f00bf7dad1c942911
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitda55e3c14e6c3d9f00bf7dad1c942911::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitda55e3c14e6c3d9f00bf7dad1c942911::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitda55e3c14e6c3d9f00bf7dad1c942911::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
