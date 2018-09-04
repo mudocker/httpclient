@@ -8,9 +8,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" executionDataType="PHAR" phpInterpreterId="bbecedf1-adf0-4a91-8f07-9f58fa6d0764" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" executionDataType="PHAR" phpInterpreterId="4650f59f-62c0-4ccd-a2fc-dc40c50f0fa1" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
+    <pharPath>$PROJECT_DIR$/composer_2.phar</pharPath>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1385685385">
@@ -81,18 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="27" />
-              <folding>
-                <element signature="e#49#71#0" />
-                <element signature="n#!!block;n#support#0;n#!!top" />
-                <element signature="e#237#296#0" />
-                <element signature="n#!!block;n#require#0;n#!!top" />
-                <element signature="n#!!block;n#autoload#0;n#!!top" />
-                <element signature="e#399#462#0" />
-                <element signature="n#!!block;n#psr-4#0;n#!!block;n#autoload#0;n#!!top" />
-                <element signature="n#!!block;n#config#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -365,24 +355,23 @@
       <workItem from="1536023617341" duration="5811000" />
       <workItem from="1536030747558" duration="2484000" />
       <workItem from="1536033404927" duration="16836000" />
-      <workItem from="1536051823536" duration="1517000" />
+      <workItem from="1536051823536" duration="1867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30738000" />
+    <option name="totallyTimeSpent" value="31088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18956336" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18956336" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" id="Structure" order="2" visible="true" weight="0.24973376" />
+      <window_info id="Structure" order="2" weight="0.24973376" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
@@ -393,7 +382,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31209505" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31209505" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Theme Preview" />
@@ -768,18 +757,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="e#49#71#0" />
-            <element signature="n#!!block;n#support#0;n#!!top" />
-            <element signature="e#237#296#0" />
-            <element signature="n#!!block;n#require#0;n#!!top" />
-            <element signature="n#!!block;n#autoload#0;n#!!top" />
-            <element signature="e#399#462#0" />
-            <element signature="n#!!block;n#psr-4#0;n#!!block;n#autoload#0;n#!!top" />
-            <element signature="n#!!block;n#config#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
