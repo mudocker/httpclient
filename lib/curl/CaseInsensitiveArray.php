@@ -2,25 +2,15 @@
 
 namespace mdocker\lib\curl;
 
-class CaseInsensitiveArray implements \ArrayAccess, \Countable, \Iterator
-{
-
-
+class CaseInsensitiveArray implements \ArrayAccess, \Countable, \Iterator{
     private $data = array();
-
-
     private $keys = array();
-
-    public function __construct(array $initial = null)
-    {
+     function __construct(array $initial = null){
         if ($initial !== null) foreach ($initial as $key => $value) $this->offsetSet($key, $value);
-
-
     }
 
 
-    public function offsetSet($offset, $value)
-    {
+    public function offsetSet($offset, $value){
         if ($offset === null) $this->data[] = $value;
          else {
             $offsetlower = strtolower($offset);
@@ -28,14 +18,11 @@ class CaseInsensitiveArray implements \ArrayAccess, \Countable, \Iterator
             $this->keys[$offsetlower] = $offset;
         }
     }
-
-
-    public function offsetExists($offset){
+    function offsetExists($offset){
         return (bool) array_key_exists(strtolower($offset), $this->data);
     }
 
-
-    public function offsetUnset($offset)
+     function offsetUnset($offset)
     {
         $offsetlower = strtolower($offset);
         unset($this->data[$offsetlower]);

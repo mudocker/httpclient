@@ -121,7 +121,6 @@ class Curl
                     $binary_data = true;
                    class_exists('CURLFile') and  $data[$key] = new \CURLFile(substr($value, 1));
                 } elseif ($value instanceof \CURLFile) $binary_data = true;
-
             }
         }
 

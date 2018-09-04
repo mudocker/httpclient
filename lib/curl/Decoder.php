@@ -9,7 +9,6 @@ class Decoder{
         version_compare(PHP_VERSION, '5.4.0', '<') and  $args = array_slice($args, 0, 3);
         $response = call_user_func_array('json_decode', $args);
         $response === null and  $response = $args['0'];
-
         return $response;
     }
 
