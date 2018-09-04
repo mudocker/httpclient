@@ -4,7 +4,7 @@
 namespace mdocker\lib;
 
 //v2
-class httpClient {
+class Httpclient {
 
     public $buffer = null;
     public $referer = null;
