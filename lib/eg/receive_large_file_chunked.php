@@ -1,6 +1,6 @@
 <?php
 // Receive PUT file.
-// See also "examples/put_large_file_chunked.php".
+// See also "eg/put_large_file_chunked.php".
 
 function file_get_contents_chunked($filename, $chunk_size, $callback) {
     $handle = fopen($filename, 'r');
