@@ -11,8 +11,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=5.3.29",
-    "react/http-client": "^0.5.9"
+    "php": ">=5.3.29"
   },
   "autoload": {
     "psr-4": {
