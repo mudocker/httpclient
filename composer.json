@@ -1,6 +1,8 @@
 {
   "name": "mudocker/httpclient",
-  "keywords": [],
+  "keywords": [
+    "httpclient"
+  ],
   "homepage": "https://github.com/mudocker/httpclient",
   "license": "MIT",
   "support": {
