@@ -14,6 +14,10 @@
     "php": ">=5.3.29"
   },
   "autoload": {
+    "files": [
+      "lib/func/exp.php",
+      "lib/func/callback.php"
+    ],
     "psr-4": {
       "mdocker\\": ""
     }

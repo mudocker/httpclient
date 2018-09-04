@@ -27,8 +27,7 @@ class HttpClient
     private $jsonDecoder = null;
     private $xmlDecoder = null;
 
-   function __construct($base_url = null)
-    {
+   function __construct($base_url = null){
         $this->multiCurl = curl_multi_init();
         $this->headers = new CaseInsensitiveArray();
         $this->setUrl($base_url);
@@ -49,14 +48,10 @@ class HttpClient
         $curl->setOpt(CURLOPT_POSTFIELDS, $curl->buildPostData($data));
         return $curl;
     }
-
-
-    public function download($url, $mixed_filename)
-    {
+    function download($url, $mixed_filename){
         $curl = new Curl();
         $this->queueHandle($curl);
         $curl->setUrl($url);
-
         if (is_callable($mixed_filename)) {
             $callback = $mixed_filename;
             $curl->downloadCompleteCallback = $callback;
@@ -66,20 +61,14 @@ class HttpClient
             $curl->downloadCompleteCallback = function ($instance, $fh) use ($filename) {file_put_contents($filename, stream_get_contents($fh));};
             $curl->fileHandle = fopen('php://temp', 'wb');
         }
-
         $curl->setOpt(CURLOPT_FILE, $curl->fileHandle);
         $curl->setOpt(CURLOPT_CUSTOMREQUEST, 'GET');
         $curl->setOpt(CURLOPT_HTTPGET, true);
         return $curl;
     }
 
-
-    public function get($url, $data = array())
-    {
-        if (is_array($url)) {
-            $data = $url;
-            $url = $this->baseUrl;
-        }
+         function get($url, $data = array()){
+        $this->is_array_string($data,$url);
         $curl = new Curl();
         $this->queueHandle($curl);
         $curl->setUrl($url, $data);
@@ -87,12 +76,14 @@ class HttpClient
         $curl->setOpt(CURLOPT_HTTPGET, true);
         return $curl;
     }
-
+    function is_array_string(&$data,&$url){
+        if (!is_array($url)) return;
+        $data = $url;
+        $url = (string) $this->baseUrl;
+    }
      function header($url, $data = array()){
-        if (is_array($url)) {
-            $data = $url;
-            $url = $this->baseUrl;
-        }
+
+         $this->is_array_string($data,$url);
         $curl = new Curl();
         $this->queueHandle($curl);
         $curl->setUrl($url, $data);
@@ -101,12 +92,8 @@ class HttpClient
         return $curl;
     }
 
-     function options($url, $data = array())
-    {
-        if (is_array($url)) {
-            $data = $url;
-            $url = $this->baseUrl;
-        }
+     function options($url, $data = array()){
+        $this->is_array_string($data,$url);
         $curl = new Curl();
         $this->queueHandle($curl);
         $curl->setUrl($url, $data);
@@ -115,27 +102,10 @@ class HttpClient
         return $curl;
     }
 
-    /**
-     * Add Patch
-     *
-     * @access public
-     * @param  $url
-     * @param  $data
-     *
-     * @return object
-     */
-    public function patch($url, $data = array())
-    {
-        if (is_array($url)) {
-            $data = $url;
-            $url = $this->baseUrl;
-        }
-
+   function patch($url, $data = array()){
+        $this->is_array_string($data,$url);
         $curl = new Curl();
-
        (is_array($data) && empty($data))and  $curl->removeHeader('Content-Length');
-
-
         $this->queueHandle($curl);
         $curl->setUrl($url);
         $curl->setOpt(CURLOPT_CUSTOMREQUEST, 'PATCH');
@@ -149,239 +119,97 @@ class HttpClient
             $data = $url;
             $url = $this->baseUrl;
         }
-
         $curl = new Curl();
         $this->queueHandle($curl);
-
        (is_array($data) && empty($data)) and  $curl->removeHeader('Content-Length');
-
-
         $curl->setUrl($url);
-
         !$follow_303_with_post and  $curl->setOpt(CURLOPT_CUSTOMREQUEST, 'POST');
-
-
         $curl->setOpt(CURLOPT_POST, true);
         $curl->setOpt(CURLOPT_POSTFIELDS, $curl->buildPostData($data));
         return $curl;
     }
 
-
-    public function put($url, $data = array())
-    {
-        if (is_array($url)) {
-            $data = $url;
-            $url = $this->baseUrl;
-        }
+     function put($url, $data = array()){
+        $this->is_array_string($data,$url);
         $curl = new Curl();
         $this->queueHandle($curl);
         $curl->setUrl($url);
         $curl->setOpt(CURLOPT_CUSTOMREQUEST, 'PUT');
         $put_data = $curl->buildPostData($data);
-        if (is_string($put_data)) {
-            $curl->setHeader('Content-Length', strlen($put_data));
-        }
+        is_string($put_data) and  $curl->setHeader('Content-Length', strlen($put_data));
         $curl->setOpt(CURLOPT_POSTFIELDS, $put_data);
         return $curl;
     }
 
-    /**
-     * Add Search
-     *
-     * @access public
-     * @param  $url
-     * @param  $data
-     *
-     * @return object
-     */
-    public function addSearch($url, $data = array())
-    {
-        if (is_array($url)) {
-            $data = $url;
-            $url = $this->baseUrl;
-        }
+    function search($url, $data = array()){
+        $this->is_array_string($data,$url);
         $curl = new Curl();
         $this->queueHandle($curl);
         $curl->setUrl($url);
         $curl->setOpt(CURLOPT_CUSTOMREQUEST, 'SEARCH');
         $put_data = $curl->buildPostData($data);
-        if (is_string($put_data)) {
-            $curl->setHeader('Content-Length', strlen($put_data));
-        }
+        is_string($put_data) and  $curl->setHeader('Content-Length', strlen($put_data));
         $curl->setOpt(CURLOPT_POSTFIELDS, $put_data);
         return $curl;
     }
 
-    /**
-     * Add Curl
-     *
-     * Add a Curl instance to the handle queue.
-     *
-     * @access public
-     * @param  $curl
-     *
-     * @return object
-     */
-    public function addCurl(Curl $curl)
-    {
+    function curl(Curl $curl){
         $this->queueHandle($curl);
         return $curl;
     }
 
-    /**
-     * Before Send
-     *
-     * @access public
-     * @param  $callback
-     */
-    public function beforeSend($callback)
-    {
+   function beforeSend($callback){
         $this->beforeSendCallback = $callback;
     }
 
-    /**
-     * Close
-     *
-     * @access public
-     */
-    public function close()
-    {
-        foreach ($this->curls as $curl) {
-            $curl->close();
-        }
-
-        if (is_resource($this->multiCurl)) {
-            curl_multi_close($this->multiCurl);
-        }
+    function close(){
+        foreach ($this->curls as $curl) $curl->close();
+       is_resource($this->multiCurl) and  curl_multi_close($this->multiCurl);
     }
 
-    /**
-     * Complete
-     *
-     * @access public
-     * @param  $callback
-     */
-    public function complete($callback)
-    {
+     function complete($callback){
         $this->completeCallback = $callback;
     }
 
-    /**
-     * Error
-     *
-     * @access public
-     * @param  $callback
-     */
-    public function error($callback)
-    {
+    function error($callback){
         $this->errorCallback = $callback;
     }
 
-    /**
-     * Get Opt
-     *
-     * @access public
-     * @param  $option
-     *
-     * @return mixed
-     */
-    public function getOpt($option)
-    {
+    function getOpt($option){
         return isset($this->options[$option]) ? $this->options[$option] : null;
     }
 
-    /**
-     * Set Basic Authentication
-     *
-     * @access public
-     * @param  $username
-     * @param  $password
-     */
-    public function setBasicAuthentication($username, $password = '')
-    {
+    function setBasicAuthentication($username, $password = ''){
         $this->setOpt(CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
         $this->setOpt(CURLOPT_USERPWD, $username . ':' . $password);
     }
 
-    /**
-     * Set Concurrency
-     *
-     * @access public
-     * @param  $concurrency
-     */
-    public function setConcurrency($concurrency)
-    {
+    function setConcurrency($concurrency){
         $this->concurrency = $concurrency;
     }
 
-    /**
-     * Set Digest Authentication
-     *
-     * @access public
-     * @param  $username
-     * @param  $password
-     */
-    public function setDigestAuthentication($username, $password = '')
-    {
+     function setDigestAuthentication($username, $password = ''){
         $this->setOpt(CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);
         $this->setOpt(CURLOPT_USERPWD, $username . ':' . $password);
     }
 
-    /**
-     * Set Cookie
-     *
-     * @access public
-     * @param  $key
-     * @param  $value
-     */
-    public function setCookie($key, $value)
-    {
+    function setCookie($key, $value){
         $this->cookies[$key] = $value;
     }
 
-    /**
-     * Set Cookies
-     *
-     * @access public
-     * @param  $cookies
-     */
-    public function setCookies($cookies)
-    {
-        foreach ($cookies as $key => $value) {
-            $this->cookies[$key] = $value;
-        }
+     function setCookies($cookies){
+        foreach ($cookies as $key => $value) $this->cookies[$key] = $value;
     }
 
-    /**
-     * Set Port
-     *
-     * @access public
-     * @param  $port
-     */
-    public function setPort($port)
-    {
+    function setPort($port){
         $this->setOpt(CURLOPT_PORT, intval($port));
     }
 
-    /**
-     * Set Connect Timeout
-     *
-     * @access public
-     * @param  $seconds
-     */
-    public function setConnectTimeout($seconds)
-    {
+   function setConnectTimeout($seconds=10){
         $this->setOpt(CURLOPT_CONNECTTIMEOUT, $seconds);
     }
 
-    /**
-     * Set Cookie String
-     *
-     * @access public
-     * @param  $string
-     */
-    public function setCookieString($string)
-    {
+    function setCookieString($string){
         $this->setOpt(CURLOPT_COOKIE, $string);
     }
 
@@ -398,8 +226,7 @@ class HttpClient
         $this->updateHeaders();
     }
 
-    function setHeaders($headers)
-    {
+    function setHeaders($headers){
         foreach ($headers as $key => $value) $this->headers[$key] = $value;
         $this->updateHeaders();
     }
@@ -420,7 +247,6 @@ class HttpClient
     function setOpts($options){
         foreach ($options as $option => $value) $this->setOpt($option, $value);
     }
-
 
    function setReferrer($referrer="http://www.baidu.com/search/spider.html"){
         $this->setOpt(CURLOPT_REFERER, $referrer);
@@ -521,7 +347,6 @@ class HttpClient
         $curl->setCookies($this->cookies);
         $curlm_error_code = curl_multi_add_handle($this->multiCurl, $curl->curl);
         !($curlm_error_code === CURLM_OK)                                                                              and error_exception('cURL multi add handle error: ' . curl_multi_strerror($curlm_error_code));
-
         $this->activeCurls[$curl->id] = $curl;
         $curl->call($curl->beforeSendCallback);
     }
