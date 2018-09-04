@@ -16,7 +16,7 @@ class Httpclient {
         return $instanceof = new self($args);
     }
 
-    private function __construct($args = array()) {
+     function __construct($args = array()) {
 
         if(!is_array($args)) $args = array();
         $this->args = $args;
