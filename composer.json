@@ -11,7 +11,7 @@
   "authors": [
     {"name": "mudocker", "email": "mudocker@163.com"}
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
     "php": ">=5.3.29"
   },
