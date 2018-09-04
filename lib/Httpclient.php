@@ -1,14 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ACER-VERITON
- * Date: 2018/9/3
- * Time: 20:42
- */
+
 
 namespace mdocker\lib;
 
-
+//v2
 class httpClient {
 
     public $buffer = null;
@@ -29,8 +24,6 @@ class httpClient {
             ob_end_clean();
             set_time_limit(0);
             header('Content-Type: text/plain; charset=utf-8');
-
-
     }
 
      function fGet($url, $data = null, $cookie = null) {
