@@ -1,8 +1,6 @@
 <?php
-
+require dirname(dirname(__DIR__)) . '/../vendor/autoload.php';
 use mdocker\lib\curl\Curl;
-
-require dirname(__DIR__) . '/../vendor/autoload.php';
 
 
 

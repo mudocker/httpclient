@@ -15,7 +15,6 @@ $oauth_data = array(
     'oauth_token' => OAUTH_ACCESS_TOKEN,
     'oauth_version' => '1.0',
 );
-
 $request_values = $oauth_data;
 ksort($request_values);
 $url = 'https://api.twitter.com/1.1/trends/place.json';
@@ -28,7 +27,6 @@ $authorization = 'Authorization: OAuth ' . implode(', ', $authorization);
 $curl = new Curl();
 $curl->setOpt(CURLOPT_HTTPHEADER, array($authorization));
 $curl->get($url, array('id' => $woeid,));
-
 echo 'Current trends:' . "\n";
 foreach ($curl->response['0']->trends as $trend) echo '- ' . $trend->name . "\n";
 

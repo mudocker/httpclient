@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b44a008b-a520-479e-b4bf-0b30593b0e3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/curl/HttpClientFG.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Httpclient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/curl/CaseInsensitiveArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/curl/CaseInsensitiveArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/curl/Curl.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/curl/Curl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/curl/Decoder.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/curl/Decoder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/curl/Encoder.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/curl/Encoder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/curl/examples/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/curl/examples/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/coinbase_account_balance.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/coinbase/coinbase_account_balance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/coinbase_btc_spot_price.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/coinbase/coinbase_btc_spot_price.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/coinbase_eth_spot_price.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/coinbase/coinbase_eth_spot_price.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/flickr_photo_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/flickr_photo_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/github_create_gist.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/github_create_gist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/gmail_send_email.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/gmail_send_email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/google_maps_geocode_address.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/google/google_maps_geocode_address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/google_plus_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/google/google_plus_profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/google_spreadsheet_values_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/google/google_spreadsheet_values_update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/put_large_file_chunked.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/put_large_file_chunked.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/reddit_top_pics.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/reddit_top_pics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/set_cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/set_cookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/set_url_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/set_url_2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/twitter_trending_topics.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/twitter_trending_topics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/examples/upload_file.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/examples/upload_file.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +47,7 @@
           <entry key="cmd" value="9" />
           <entry key="json" value="8" />
           <entry key="md" value="3" />
-          <entry key="php" value="88" />
+          <entry key="php" value="214" />
           <entry key="py" value="1" />
           <entry key="sh" value="1" />
         </counts>
@@ -51,24 +59,24 @@
           <entry key="Dockerfile" value="1" />
           <entry key="JSON" value="8" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="88" />
+          <entry key="PHP" value="214" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmd" value="60" />
-          <entry key="dummy" value="10" />
+          <entry key="dummy" value="20" />
           <entry key="json" value="54" />
-          <entry key="php" value="1665" />
+          <entry key="php" value="1751" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Cmd" value="60" />
           <entry key="JSON" value="54" />
-          <entry key="PHP" value="1665" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="PHP" value="1751" />
+          <entry key="PLAIN_TEXT" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions">
@@ -85,26 +93,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/curl/examples/delete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="20" selection-start-line="2" selection-end-line="2" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/curl/examples/deviant_art_rss.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-end-line="3" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -119,12 +108,28 @@
       <find>__get</find>
       <find>use \Curl\Curl;</find>
       <find>ArrayU</find>
+      <find>require __DIR__ . '/../vendor/autoload.php';</find>
+      <find>require dirname(dirname(__DIR__) ). '/../vendor/autoload.php';</find>
+      <find>addGet</find>
+      <find>new MultiCurl();</find>
+      <find>require dirname(__DIR__) . '/../vendor/autoload.php';</find>
     </findStrings>
     <replaceStrings>
+      <replace>p</replace>
+      <replace>use mdocker\lib\curl\Curl;</replace>
+      <replace>require dirname(dirname(__DIR__) ). '/../vendor/autoload.php';</replace>
+      <replace>require dirname(__DIR__) . '/../vendor/autoload.php';</replace>
+      <replace>get</replace>
+      <replace>new \mdocker\lib\curl\HttpClient();</replace>
+      <replace>require dirname(dirname(__DIR__)) . '/../vendor/autoload.php';</replace>
       <replace>\mdocker\lib\curl\</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\all\php\httpclient\lib\curl</dir>
+      <dir>D:\all\php\httpclient\lib</dir>
+      <dir>D:\all\php\httpclient\lib\examples</dir>
+      <dir>D:\all\php\httpclient\lib\examples\download</dir>
+      <dir>D:\all\php\httpclient\lib\examples\post</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -135,31 +140,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/TTT.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/gp.cmd" />
-        <option value="$PROJECT_DIR$/tags.cmd" />
-        <option value="$PROJECT_DIR$/lib/Httpclient.php" />
-        <option value="$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/Curl.php" />
-        <option value="$PROJECT_DIR$/lib/curl/ArrayUtil.php" />
-        <option value="$PROJECT_DIR$/lib/curl/StringUtil.php" />
-        <option value="$PROJECT_DIR$/lib/curl/examples/multi_curl_get.php" />
-        <option value="$PROJECT_DIR$/lib/exp/ErrorException.php" />
-        <option value="$PROJECT_DIR$/lib/curl/MultiCurl.php" />
-        <option value="$PROJECT_DIR$/un.cmd" />
-        <option value="$PROJECT_DIR$/lib/curl/examples/coinbase_eth_spot_price.php" />
-        <option value="$PROJECT_DIR$/lib/curl/examples/twitter_trending_topics.php" />
-        <option value="$PROJECT_DIR$/lib/func/exp.php" />
-        <option value="$PROJECT_DIR$/lib/curl/Url.php" />
-        <option value="$PROJECT_DIR$/lib/func/callback.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/lib/curl/HttpClient.php" />
-        <option value="$PROJECT_DIR$/lib/curl/Encoder.php" />
-        <option value="$PROJECT_DIR$/lib/curl/Decoder.php" />
-        <option value="$PROJECT_DIR$/lib/curl/Curl.php" />
-        <option value="$PROJECT_DIR$/lib/curl/CaseInsensitiveArray.php" />
-        <option value="$PROJECT_DIR$/lib/curl/HttpClientFG.php" />
-        <option value="$PROJECT_DIR$/lib/curl/examples/delete.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get_response_cookies.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get_base_url_1.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get.php" />
+        <option value="$PROJECT_DIR$/lib/examples/download_file_with_callback.php" />
+        <option value="$PROJECT_DIR$/lib/examples/download_file.php" />
+        <option value="$PROJECT_DIR$/lib/examples/download_file_with_redirect.php" />
+        <option value="$PROJECT_DIR$/lib/examples/custom.php" />
+        <option value="$PROJECT_DIR$/lib/examples/coinbase_eth_spot_price.php" />
+        <option value="$PROJECT_DIR$/lib/examples/coinbase_btc_spot_price.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_before_send.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_delete.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_download.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_download_with_callback.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_download_with_callbacks.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get_callbacks.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get_load_test.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get_with_callable_retry.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get_with_retry.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_patch.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_post.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_put.php" />
+        <option value="$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_upload_file.php" />
+        <option value="$PROJECT_DIR$/lib/examples/download/download_file.php" />
+        <option value="$PROJECT_DIR$/lib/examples/post/post.php" />
+        <option value="$PROJECT_DIR$/lib/examples/post/post_multiple_values_same_key_with_indexes_implicit.php" />
+        <option value="$PROJECT_DIR$/lib/examples/post/post_multiple_values_same_key_without_indexes.php" />
+        <option value="$PROJECT_DIR$/lib/examples/post/post_redirect_get.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get/get.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get/get_base_url_1.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get/get_base_url_2.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get/get_pages.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get/get_relative.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get/get_response_cookies.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get/get_with_callable_retry.php" />
+        <option value="$PROJECT_DIR$/lib/examples/get/get_with_retry.php" />
+        <option value="$PROJECT_DIR$/lib/examples/upload_file.php" />
+        <option value="$PROJECT_DIR$/lib/examples/twitter_trending_topics.php" />
+        <option value="$PROJECT_DIR$/lib/examples/set_url_2.php" />
+        <option value="$PROJECT_DIR$/lib/examples/set_cookie.php" />
+        <option value="$PROJECT_DIR$/lib/examples/reddit_top_pics.php" />
+        <option value="$PROJECT_DIR$/lib/examples/put_large_file_chunked.php" />
+        <option value="$PROJECT_DIR$/lib/examples/coinbase/coinbase_account_balance.php" />
+        <option value="$PROJECT_DIR$/lib/examples/coinbase/coinbase_btc_spot_price.php" />
+        <option value="$PROJECT_DIR$/lib/examples/coinbase/coinbase_eth_spot_price.php" />
+        <option value="$PROJECT_DIR$/lib/examples/flickr_photo_search.php" />
+        <option value="$PROJECT_DIR$/lib/examples/github_create_gist.php" />
+        <option value="$PROJECT_DIR$/lib/examples/gmail_send_email.php" />
+        <option value="$PROJECT_DIR$/lib/examples/google/google_maps_geocode_address.php" />
+        <option value="$PROJECT_DIR$/lib/examples/google/google_plus_profile.php" />
+        <option value="$PROJECT_DIR$/lib/examples/google/google_spreadsheet_values_update.php" />
       </list>
     </option>
   </component>
@@ -273,14 +304,21 @@
               <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="httpclient" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="curl" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="httpclient" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="curl" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,12 +329,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/soft/bc/phpstudy/2018/PHPTutorial/php/php-7.2.1-nts/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/examples" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\all\php\httpclient\lib\examples\google" />
+      <recent name="D:\all\php\httpclient\lib\examples\coinbase" />
+      <recent name="D:\all\php\httpclient\lib\examples\get" />
+      <recent name="D:\all\php\httpclient\lib\examples\post" />
+      <recent name="D:\all\php\httpclient\lib\examples\download" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\all\php\httpclient\lib\curl" />
       <recent name="D:\all\php\httpclient\lib" />
@@ -332,16 +377,15 @@
       <workItem from="1535978324664" duration="1108000" />
       <workItem from="1536023617341" duration="5811000" />
       <workItem from="1536030747558" duration="2484000" />
-      <workItem from="1536033404927" duration="10248000" />
+      <workItem from="1536033404927" duration="11953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22633000" />
+    <option name="totallyTimeSpent" value="24338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2603834" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -397,278 +441,336 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_6.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="1047" column="9" selection-start-line="1047" selection-start-column="9" selection-end-line="1047" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/TTT.php" />
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
-            <caret line="1" selection-start-line="1" selection-end-line="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tags.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/ArrayUtil.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/Curl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/scripts/bump_minor_version.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/StringUtil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/examples/coinbase_btc_spot_price.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/examples/get.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/src/Curl/MultiCurl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="650" column="20" selection-start-line="650" selection-start-column="20" selection-end-line="650" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/docs/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/www/build.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/www/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/tests/generate_urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-curl-class/php-curl-class/scripts/bump_major_version.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/examples/multi_curl_get.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="543" column="33" lean-forward="true" selection-start-line="543" selection-start-column="33" selection-end-line="543" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gp.cmd">
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_download_with_callback.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/un.cmd">
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_download_with_callbacks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        <state relative-caret-position="95">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/HttpClient.php">
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get_callbacks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get_with_callable_retry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get_load_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_get_with_retry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_patch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_put.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_upload_file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/multi_curl/multi_curl_delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/download/download_file_with_callback.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="26" />
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/examples/coinbase_eth_spot_price.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/examples/twitter_trending_topics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="26" column="133" selection-start-line="26" selection-start-column="133" selection-end-line="26" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/exp/ErrorException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl_d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="458" column="9" selection-start-line="458" selection-start-column="9" selection-end-line="458" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/func/callback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/Url.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/func/exp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/Encoder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/HttpClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1513">
-          <caret line="250" column="12" selection-start-line="250" selection-start-column="12" selection-end-line="250" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/StringUtil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/Decoder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/Curl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/ArrayUtil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/CaseInsensitiveArray.php">
+    <entry file="file://$PROJECT_DIR$/lib/examples/download/download_file_with_redirect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Httpclient.php">
+    <entry file="file://$PROJECT_DIR$/lib/examples/download/download_file.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="74" column="5" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="74" selection-end-column="5" />
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/HttpClientFG.php">
+    <entry file="file://$PROJECT_DIR$/lib/examples/post/post_json.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="304">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
+    <entry file="file://$PROJECT_DIR$/lib/examples/post/post_json_array_response.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/post/post_json_manual_encoding.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/post/post_multiple_values_same_key_with_indexes_explicit.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/post/post_multiple_values_same_key_with_indexes_implicit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="1026" column="22" lean-forward="true" selection-start-line="1026" selection-start-column="22" selection-end-line="1026" selection-end-column="23" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/examples/deviant_art_rss.php">
+    <entry file="file://$PROJECT_DIR$/lib/examples/post/post_multiple_values_same_key_without_indexes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-end-line="3" selection-end-column="15" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/curl/examples/delete.php">
+    <entry file="file://$PROJECT_DIR$/lib/examples/post/post_redirect_get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="107" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/get/get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/get/get_base_url_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/get/get_base_url_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/get/get_pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/get/get_relative.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/get/get_response_cookies.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="20" selection-start-line="2" selection-end-line="2" selection-end-column="26" />
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/get/get_with_retry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/youtube_video_count.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/get/get_with_callable_retry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/youtube_list_playlist_videos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/upload_file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/twitter_trending_topics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/set_url_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/set_cookie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/search.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/reddit_top_pics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/receive_large_file_chunked.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/put_large_file_chunked.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/twitter_post_tweet.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/coinbase/coinbase_account_balance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/coinbase/coinbase_btc_spot_price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/flickr_photo_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/coinbase/coinbase_eth_spot_price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/github_create_gist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/gmail_send_email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/post/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="56" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/google/google_maps_geocode_address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/google/google_plus_profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/examples/google/google_spreadsheet_values_update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
         </state>
       </provider>
     </entry>

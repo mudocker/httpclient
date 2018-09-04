@@ -1,7 +1,6 @@
 <?php
 require dirname(__DIR__) . '/../vendor/autoload.php';
 use mdocker\lib\curl\Curl;
-
 $pages = 10;
 $q = 'coffee';
 $curl = new Curl();

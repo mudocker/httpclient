@@ -1,9 +1,6 @@
 <?php
-// PUT a file using chunked data.
-// See also "examples/receive_large_file_chunked.php".
 
 require dirname(__DIR__) . '/../vendor/autoload.php';
-
 use mdocker\lib\curl\Curl;
 
 function read_file($ch, $fd, $length) {
@@ -24,10 +21,8 @@ $curl->put('http://127.0.0.1:8000/');
 
 fclose($fp);
 
-if ($curl->error) {
-    echo 'Error: ' . $curl->errorMessage . "\n";
-} else {
-    echo 'Success' . "\n";
-}
+if ($curl->error) echo 'Error: ' . $curl->errorMessage . "\n";
+else echo 'Success' . "\n";
+
 
 // @codingStandardsIgnoreFile

@@ -1,28 +1,18 @@
 <?php
 require dirname(__DIR__) . '/../vendor/autoload.php';
-
 use mdocker\lib\curl\Curl;
-
 const CLIENT_ID = 'XXXXXXXXXXXX.apps.googleusercontent.com';
 const CLIENT_SECRET = 'XXXXXXXXXXXXXXXXXXXXXXXX';
-
 session_start();
 
 if (isset($_GET['code'])) {
     $code = $_GET['code'];
-
-    // Exchange the authorization code for an access token.
     $curl = new Curl();
     $curl->post('https://accounts.google.com/o/oauth2/token', array(
         'code' => $code,
         'client_id' => CLIENT_ID,
         'client_secret' => CLIENT_SECRET,
-        'redirect_uri' => implode('', array(
-            isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http',
-            '://',
-            $_SERVER['SERVER_NAME'],
-            $_SERVER['SCRIPT_NAME'],
-        )),
+        'redirect_uri' => implode('', array(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http', '://', $_SERVER['SERVER_NAME'], $_SERVER['SCRIPT_NAME'],)),
         'grant_type' => 'authorization_code',
     ));
 
@@ -34,14 +24,11 @@ if (isset($_GET['code'])) {
     $_SESSION['access_token'] = $curl->response->access_token;
     header('Location: ?');
 } elseif (!empty($_SESSION['access_token'])) {
-    // Use the access token to send an email.
     $curl = new Curl();
     $curl->setHeader('Content-Type', 'message/rfc822');
     $curl->setHeader('Authorization', 'OAuth ' . $_SESSION['access_token']);
-
     $boundary = md5(time());
-    $raw =
-        'MIME-Version: 1.0' . "\r\n" .
+    $raw = 'MIME-Version: 1.0' . "\r\n" .
         'Subject: hi' . "\r\n" .
         'To: John Doe <jdoe@example.com>' . "\r\n" .
         'Content-Type: multipart/alternative; boundary=' . $boundary . "\r\n" .
@@ -64,17 +51,7 @@ if (isset($_GET['code'])) {
     $curl = new Curl();
     $curl->get('https://accounts.google.com/o/oauth2/auth', array(
         'scope' => 'https://www.googleapis.com/auth/gmail.compose',
-        'redirect_uri' => implode('', array(
-            isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http',
-            '://',
-            $_SERVER['SERVER_NAME'],
-            $_SERVER['SCRIPT_NAME'],
-        )),
-        'response_type' => 'code',
-        'client_id' => CLIENT_ID,
-        'approval_prompt' => 'force',
-    ));
-
+        'redirect_uri' => implode('', array(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http', '://', $_SERVER['SERVER_NAME'], $_SERVER['SCRIPT_NAME'],)), 'response_type' => 'code', 'client_id' => CLIENT_ID, 'approval_prompt' => 'force',));
     $url = $curl->responseHeaders['Location'];
     echo '<a href="' . $url . '">Continue</a>';
 }
