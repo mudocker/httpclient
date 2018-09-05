@@ -81,7 +81,7 @@ class HttpClient
         $data = $url;
         $url = (string) $this->baseUrl;
     }
-     function header($url, $data = array()){
+   function header($url, $data = array()){
 
          $this->is_array_string($data,$url);
         $curl = new Curl();
@@ -92,7 +92,7 @@ class HttpClient
         return $curl;
     }
 
-     function options($url, $data = array()){
+   function options($url, $data = array()){
         $this->is_array_string($data,$url);
         $curl = new Curl();
         $this->queueHandle($curl);
@@ -113,7 +113,7 @@ class HttpClient
         return $curl;
     }
 
-     function post($url, $data = '', $follow_303_with_post = false){
+    function post($url, $data = '', $follow_303_with_post = false){
         if (is_array($url)) {
             $follow_303_with_post = (bool)$data;
             $data = $url;

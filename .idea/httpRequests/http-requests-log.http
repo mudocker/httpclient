@@ -1,0 +1,20 @@
+GET https://c.cn
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET https://c.cn
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET https://h.wandouip.com/get/ip-list?pack=0&num=20&xy=1&type=2&mr=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-05T120315.200.json
+
+###
+

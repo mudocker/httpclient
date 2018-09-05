@@ -111,37 +111,44 @@ class Curl
     function buildPostData($data)
     {
         $binary_data = false;
-        if (isset($this->headers['Content-Type']) &&
-            preg_match($this->jsonPattern, $this->headers['Content-Type']) && (is_array($data) || (is_object($data) && interface_exists('JsonSerializable', false) && $data instanceof \JsonSerializable))) {
-            $data = Encoder::encodeJson($data);
-        } elseif (is_array($data)) {
-            ArrayUtil::is_array_multidim($data) and  $data = ArrayUtil::array_flatten_multidim($data);
-            foreach ($data as $key => $value) {
-                if (is_string($value) && strpos($value, '@') === 0 && is_file(substr($value, 1))) {
-                    $binary_data = true;
-                   class_exists('CURLFile') and  $data[$key] = new \CURLFile(substr($value, 1));
-                } elseif ($value instanceof \CURLFile) $binary_data = true;
-            }
-        }
+        if ($this->isJson($data)) $data = Encoder::encodeJson($data);
+
+        elseif (is_array($data)) $this->postDataArray($data,$binary_data);
+
 
         (!$binary_data && (is_array($data) || is_object($data))) and  $data = http_build_query($data, '', '&');
-
 
         return $data;
     }
 
-     function call(){
-        $args = func_get_args();
-        $function = array_shift($args);
-        if (is_callable($function)) {
-            array_unshift($args, $this);
-            call_user_func_array($function, $args);
+    private function isJson(&$data){
+   return  isset($this->headers['Content-Type'])
+         && preg_match($this->jsonPattern, $this->headers['Content-Type'])
+         && (is_array($data)
+         || (is_object($data)
+         && interface_exists('JsonSerializable', false)
+         && $data instanceof \JsonSerializable));
+    }
+
+    function postDataArray(&$data,&$binary_data){
+        ArrayUtil::is_array_multidim($data) and  $data = ArrayUtil::flatten_multidim($data);
+        foreach ($data as $key => $value) {
+            if (is_string($value) && strpos($value, '@') === 0 && is_file(substr($value, 1)))                               {$binary_data = true;class_exists('CURLFile') and  $data[$key] = new \CURLFile(substr($value, 1));
+            } elseif ($value instanceof \CURLFile)                                                                      $binary_data = true;
         }
+    }
+
+   function call(){
+     $args = func_get_args();
+     $function = array_shift($args);
+     if (!is_callable($function)) return;
+     array_unshift($args, $this);
+     call_user_func_array($function, $args);
+
     }
 
     function close(){
         is_resource($this->curl) and  curl_close($this->curl);
-
         $this->options = null;
         $this->jsonDecoder = null;
         $this->jsonDecoderArgs = null;
@@ -149,6 +156,7 @@ class Curl
         $this->xmlDecoderArgs = null;
         $this->defaultDecoder = null;
     }
+
 
     function complete($callback){
         $this->completeCallback = $callback;
@@ -435,11 +443,11 @@ class Curl
     }
 
      function setHeader($key, $value){
-        $this->headers[$key] = $value;
-        $headers = array();
-        foreach ($this->headers as $key => $value) $headers[] = $key . ': ' . $value;
-        $this->setOpt(CURLOPT_HTTPHEADER, $headers);
-    }
+    $this->headers[$key] = $value;
+    $headers = array();
+    foreach ($this->headers as $key => $value) $headers[] = $key . ': ' . $value;
+    $this->setOpt(CURLOPT_HTTPHEADER, $headers);
+}
 
    function setHeaders($headers){
         foreach ($headers as $key => $value) $this->headers[$key] = $value;
@@ -480,7 +488,7 @@ class Curl
    function setProxy($proxy, $port = null, $username = null, $password = null){
        $this->setOpt(CURLOPT_PROXY, $proxy);
        $port !== null                                                                                                     and  $this->setOpt(CURLOPT_PROXYPORT, $port);
-     ($username !== null && $password !== null)                                                                           and  $this->setOpt(CURLOPT_PROXYUSERPWD, $username . ':' . $password);
+      ($username !== null && $password !== null)                                                                           and  $this->setOpt(CURLOPT_PROXYUSERPWD, $username . ':' . $password);
 
     }
 
@@ -523,7 +531,7 @@ class Curl
 
     function setUrl($url, $mixed_data = ''){
         $built_url = $this->buildUrl($url, $mixed_data);
-        $this->url = $this->url === null?                                                                                         (string)new Url($built_url): (string)new Url($this->url, $built_url);
+        $this->url = $this->url === null?    (string)new Url($built_url): (string)new Url($this->url, $built_url);
         $this->setOpt(CURLOPT_URL, $this->url);
     }
 
@@ -536,11 +544,9 @@ class Curl
         $attempt_retry = false;
         if (!$this->error)   return $attempt_retry;
         $attempt_retry =  $this->retryDecider === null?  $this->remainingRetries >= 1:call_user_func($this->retryDecider, $this);
-        if ($attempt_retry) {
-                $this->retries += 1;
-                $this->remainingRetries and  $this->remainingRetries -= 1;
-      }
-
+        if (!$attempt_retry)  return $attempt_retry;
+         $this->retries += 1;
+         $this->remainingRetries and  $this->remainingRetries -= 1;
         return $attempt_retry;
     }
 
@@ -796,11 +802,11 @@ class Curl
         $this->setDefaultUserAgent();
         $this->setDefaultTimeout();
         $this->setOpt(CURLINFO_HEADER_OUT, true);
-        $header_callback_data = new \stdClass();
-        $header_callback_data->rawResponseHeaders = '';
-        $header_callback_data->responseCookies = array();
-        $this->headerCallbackData = $header_callback_data;
-        $this->setOpt(CURLOPT_HEADERFUNCTION, createHeaderCallback($header_callback_data));
+        $data = new \stdClass();
+        $data->rawResponseHeaders = '';
+        $data->responseCookies = array();
+        $this->headerCallbackData = $data;
+        $this->setOpt(CURLOPT_HEADERFUNCTION, createHeaderCallback($data));
         $this->setOpt(CURLOPT_RETURNTRANSFER, true);
         $this->headers = new CaseInsensitiveArray();
         $this->setUrl($base_url);
