@@ -1,15 +1,14 @@
 <?php
-require dirname(dirname(__DIR__)) . '/../vendor/autoload.php';
+use mdocker\lib\curl\multi\mcurl;
 
-use mdocker\lib\curl\Curl;
+require  dirname(__DIR__).'/autoload.php';
 
-// curl --request GET "https://httpbin.org/get?key=value"
+$mcurl=new mcurl();
+$mcurl->get('http://www.topthink.com/');
+$mcurl->get('http://www.hao123.com/?1536217914');
+$mcurl->get("https://secure.php.net/manual/en/function.curl-multi-add-handle.php");
 
-$curl = new Curl();
-$curl->get('https://httpbin.org/get', array('key' => 'value',));
+$data=$mcurl->start();
 
-if ($curl->error) echo 'Error: ' . $curl->errorCode . ': ' . $curl->errorMessage . "\n";
- else {
-    echo 'Response:' . "\n";
-    var_dump($curl->response);
-}
+
+$data=1;

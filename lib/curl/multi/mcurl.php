@@ -1,69 +1,78 @@
 <?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: ACER-VERITON
+ * Date: 2018/9/5
+ * Time: 20:04
+ */
 
+namespace mdocker\lib\curl\multi;
 
-namespace mdocker\lib\curl;
-
-/*1步：curl_multi_init初始化curl批处理句柄资源$handle
-
-2步：curl_multi_add_handle向$handle加$ch                                                                        //   循环
-3步：curl_multi_exec解析$handle                                                                                      //     循环
-
-4步：curl_multi_getcontent取输出文本流                                                                                // 循环
-
-5步：curl_multi_remove_handle移除$handle中$ch，为每handle调curl_close                                                关闭
-
-*/
 
 class mcurl
 {
+    public $handle;
+    public $active= null;
+    public $mrc;
+    public $curl=array();
+    public $urls=[];
+    public $result=[];
 
-    /**
-     * @var ObjectData
-     */
-    public $data;
-
-    function __construct(){
-      $this->data=new ObjectData();
-    }
-    function get($urls) {
-        $this->urls=$urls;
-        $this->method="GET";
-    }
-    function post($urls,$data){
-        $this->urls=$urls;
-        $this->post_data=$data;
-        $this->ispost=true;
-        $this->method="POST";
+    function get($urls){
+        array_push($this->urls,$urls);
     }
     function start(){
-        $this->getHandle();
-        $this->create_ch_add_handle();
-        $this->exec_handle();
-        $this->curl_selecct();
-        return $this->getResponse();
-    }
-    function setProxy($proxy, $port = null, $username = null, $pwd = null){
-        $this->proxy=$proxy;
-        $this->port=$port;
-        $this->username=$username;
-        $this->pwd=$pwd;
+        $this->add_ch();
+        $this->read();
+        return   $this->getResponse();
     }
 
-    function __get($name){
-       $value=isset($this->data->$name)?$this->data->$name:null;
-       return $value;
-    }
 
-    function __set($name, $value){
-        $this->data->$name=$value;
-        return true;
+    function __construct(){
+        $this->handle =  curl_multi_init();
     }
-    function __call($name, $arguments){
-          $obj=  new \ReflectionObject($this->data);
-         if (!$obj->hasMethod($name))  return null;
-         $methods=$obj->getMethod($name) ;
-        return   $methods->invokeArgs($this->data,$arguments);
+    function add_ch(){
+        foreach ($this->urls as $key => $v) {
+            $this->curl[$key]=$this->getCh($v);
+            curl_multi_add_handle($this->handle,$this->curl[$key]);
+        }
+    }
+    function read(){
+
+        do {
+            $status = curl_multi_exec($this->handle, $this->active);
+            $info = curl_multi_info_read($this->handle);
+            false !== $info and  var_dump($info);
+        } while ($status === CURLM_CALL_MULTI_PERFORM || $this->active);
+    }
+    function getResponse(){
+        foreach ($this->urls as $key => $v) $this->result[$key] = curl_multi_getcontent($this->curl[$key]);
+        return $this->result;
+    }
+     function __destruct(){
+       foreach ($this->curl as $v) {
+           $success_0=curl_multi_remove_handle($this->handle, $v);
+           curl_close($v);
+       }
+       curl_multi_close($this->handle);
+     }
+     function getCh($url){
+        $curl=new curl();
+        $curl->setUrl($url);
+        $curl->setTimeout();
+        $curl->setLocation();
+        $curl->setReferrer();
+        $curl->setUserAgent();
+        $curl->setEncoding();
+        $curl->setMethod();
+        $curl->setTransfer();
+        $curl->setSSL();
+        $curl->setHeader0();
+        return  $curl->getResultCh();
+        //    $this->setTransfer();
+        //   $this->setProxy();
+        //   $this->setPost();
+        // $this->setSSL();
+        //  $this->setopt(CURLOPT_HEADER, $this->_header);
     }
 }
-
-
