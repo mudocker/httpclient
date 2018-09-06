@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a523e21f-2b49-4db1-ba9b-276e2844eab3" name="ddd" url="http://199.188.106.249">
+        <fileTransfer host="199.188.106.249" port="22" rootFolder="/usr/local/nginx/conf" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="d95b1b42-d65e-4145-93fd-7ee1e5905f2e" name="web" url="http://199.188.106.249">
+        <fileTransfer host="199.188.106.249" port="22" rootFolder="/web/www/uzcms/www.kfylkj.com" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

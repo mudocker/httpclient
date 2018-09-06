@@ -8,7 +8,7 @@
 
 namespace mdocker\lib\curl\multi;
 
-
+//http://www.php.net/manual/zh/function.curl-multi-info-read.php
 class mcurl
 {
     public $handle;
